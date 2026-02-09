@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My Dictionary Search Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Search Bar -->
+        <form id="searchForm" aria-label="Dictionary search form">
+            <input id="searchInput" aria-label="Search word input" type="text" placeholder="Search a word!" required />
+            <button type ="submit" aria-label="Search button">Search</button>
+        </form>
+
+        <!-- Results -->
+        <div id="results">
+            <h2>Word</h2>
+
+            <!-- Phonetic -->
+            <p id="phoneticText"></p>
+
+            <!-- Audio -->
+            <audio controls></audio>
+
+            <!-- Definition -->
+            <div id="definitionsContainer"></div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

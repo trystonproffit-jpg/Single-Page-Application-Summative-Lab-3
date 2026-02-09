@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    min-height: 100vh;
+    display: block;
+    padding: 40px 20px;
+}
+
+.app {
+    width: 100%;
+    max-width:  500px;
+    margin: 0 auto;
+}
+
+#results {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#results,
+#searchForm{
+    width:100%;
+    max-width: 500px;
+}
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+#searchInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#searchInput:focus {
+    outline:none;
+    border-color: #4a90e2;
+}
+
+button {
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#results h2 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+#phoneticText {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+audio {
+    margin: 10px 0;
+    width: 100%;
+}
+
+#definitionsContainer ul {
+    list-style: disc;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#definitionsContainer li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+#synonyms {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
